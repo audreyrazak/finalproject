@@ -1,0 +1,95 @@
+body{
+  background-color: yellow;
+
+}
+.eventname{
+position: absolute;
+width: 1000px;
+height: 100px;
+top:20%;
+left:20%;
+font-family: helvetica;
+font-weight: bold;
+font-size: 40pt;
+color: black;
+}
+.eventname:hover{
+animation-name: titleanimation;
+animation-duration: .5s;
+}
+.date{
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  top:10%;
+  left:60%;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 40pt;
+  color: black;
+}
+.details{
+  position: absolute;
+  width:400px;
+  height: 600px;
+  top:45%;
+  left:20%;
+  font-family: helvetica;
+  font-size: 14pt;
+  color: black;
+  line-height: 20pt;
+}
+.time{
+  position: absolute;
+  width:200px;
+  height: 200px;
+  top:45%;
+  left:calc(20% + 500px);
+  font-family: helvetica;
+  font-size: 14pt;
+  color: black;
+    line-height: 20pt;
+}
+.location{
+  position: absolute;
+  width:200px;
+  height: 200px;
+  top:55%;
+  left:calc(20% + 500px);
+  font-family: helvetica;
+  font-size: 14pt;
+  color: black;
+    line-height: 20pt;
+}
+.highlight{
+  position: absolute;
+  background-color: red;
+  left: calc(20% + 590px);
+  top:10%;
+  width:0px;
+  height:40px;
+  animation-name: highlight;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+@keyframes highlight {
+  0%{
+    position: absolute;
+    width:0px;
+    height:40px;
+left: calc(20% + 190px);
+top:10%;
+  }
+  100%{
+    position: absolute;
+    width:240px;
+  }
+}
+@keyframes titleanimation {
+  0%{
+    top: 20%;
+  }
+  100%{
+    top: 19%;
+  }
+}

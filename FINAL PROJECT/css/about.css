@@ -1,0 +1,62 @@
+body{
+  background-color: red;
+  font-family: helvetica;
+  font-weight: bold;
+  color:black;
+  animation-name: slowflash;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.welcome{
+position: absolute;
+width:70vw;
+height:15vh;
+top: calc(50% - 7.5vh);
+left: 35%;
+font-size: 60pt;
+animation-name: welcome;
+animation-duration: 1s;
+animation-fill-mode: both;
+animation-timing-function: ease-in;
+}
+
+.text{
+position: absolute;
+width:70vw;
+height:40vh;
+top:40%;
+left: 30%;
+font-size: 20pt;
+animation: show 2s;
+animation-delay: 3s;
+}
+
+@keyframes slowflash {
+  0%{
+    background-color: red;
+  }
+  50%{
+    background-color: yellow;
+  }
+  100%{
+      background-color: red;
+  }
+}
+@keyframes welcome {
+  0%{
+    top: calc(50% - 7.5vh);
+  left: 35%;
+  }
+  100%{
+    top: calc(30% - 7.5vh);
+    left: 35%;
+  }
+}
+@keyframes show {
+  0%{
+    display: none;
+  }
+  100%{
+    display: show;
+  }
+}

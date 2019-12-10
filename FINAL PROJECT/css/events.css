@@ -1,0 +1,76 @@
+body{
+  font-family: helvetica;
+  margin: none;
+}
+.title{
+  position: absolute;
+  width: 30vw;
+  height: 20vh;
+  left: calc(50% - 10vw);
+  top:5%;
+  color:red;
+  font-weight: bold;
+  font-size: 50pt;
+}
+.text{
+  display: inline;
+  text-decoration: none;
+  color:black;
+}
+.text:hover{
+    color:rgb(0, 18, 255);
+}
+#month{
+  font-size: 20pt;
+    display: inline;
+    font-weight: bold;
+}
+#year{
+  font-size: 40pt;
+  display: inline;
+  color: red;
+  font-weight: bold;
+}
+.events{
+  position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 1% 1% 1% 1%;
+	box-sizing: border-box;
+	overflow: scroll;
+	font-size: 12pt;
+	line-height: 20pt;
+	color: black;
+}
+.column1{
+  position: absolute;
+  width: 20vw;
+  height: 70vh;
+  left: 5%;
+  top:20%;
+
+}
+.column2{
+  position: absolute;
+  width: 20vw;
+  height: 70vh;
+  left: 110%;
+  top:-2%;
+
+}
+.column3{
+  position: absolute;
+  width: 20vw;
+  height: 70vh;
+  left: 110%;
+  top:-2%;
+
+}
+.column4{
+    position: absolute;
+  width: 20vw;
+  height: 70vh;
+  left: 110%;
+  top:-2%;
+
+}
